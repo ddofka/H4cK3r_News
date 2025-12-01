@@ -5,6 +5,9 @@ It fetches the top stories from the Hacker News API, displays them in a list, an
 
 ---
 
+<img width="311" height="606" alt="image" src="https://github.com/user-attachments/assets/8bc8e4eb-c323-4264-81a3-cf769a8ea294" />
+
+---
 ## Features
 
 ### • Fetch Top Hacker News Stories  
@@ -34,25 +37,6 @@ Supports:
 
 ---
 
-## Project Structure
-
-H4X0R News SwiftUI/
-│
-├── ContentView.swift
-│ Main screen: story list, navigation, long-press handling, animations.
-│
-├── PostData.swift
-│ Defines the Post model mapped from the Hacker News API.
-│
-├── StashedPost.swift
-│ SwiftData model (@Model) used to persist saved articles.
-│
-├── StashedView.swift
-│ Displays the user’s saved stories, supports swipe-to-delete.
-│
-└── PostRowView.swift
-UI for a single story row, including pop animation and haptics.
-
 ## Requirements
 
 - **iOS 17+**
@@ -66,4 +50,10 @@ UI for a single story row, including pop animation and haptics.
 ## API Reference
 
 The app uses the Hacker News Algolia index:
-https://hn.algolia.com/api/v1/search?tags=front_page
+GET https://hn.algolia.com/api/v1/search?tags=front_page
+This returns JSON containing:
+- title
+- points
+- url
+- objectID
+- …and more, mapped into the local Post struct.
