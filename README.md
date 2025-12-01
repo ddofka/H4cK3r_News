@@ -1,6 +1,6 @@
 # H4cK3r News (SwiftUI + SwiftData)
 
-H4X0R News is a simple Hacker News reader built with SwiftUI and SwiftData.  
+H4cK3r News is a simple Hacker News reader built with SwiftUI and SwiftData.  
 It fetches the top stories from the Hacker News API, displays them in a list, and allows the user to save (“stash”) articles for later reading. Saved articles persist locally using SwiftData.
 
 ---
